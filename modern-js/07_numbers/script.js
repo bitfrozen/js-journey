@@ -1,0 +1,23 @@
+const consoleHeaderStyle = "padding: 5px; background-color: white; color: black; font-weight: bold;";
+console.log("%cNumbers", consoleHeaderStyle);
+const n = 5.5555;
+console.log(typeof n);
+const nw = new Number(5.5555);
+console.log(typeof nw);
+console.log(nw.toString(), typeof nw.toString());
+console.log(nw.toFixed(2), typeof nw.toFixed(2));
+console.log(nw.toPrecision(4));
+console.log(nw.toExponential(2));
+console.log(nw.toLocaleString("lt-LT"));
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+
+console.log("%cMath", consoleHeaderStyle);
+console.log(Math);
+console.log(Math.sqrt(9));
+console.log(Math.abs(-55.55));
+console.log(Math.round(5.555));
+console.log(Math.ceil(5.222));
+console.log(Math.floor(5.999));
+console.log(Math.pow(2, 4));
+console.log(Math.random());
