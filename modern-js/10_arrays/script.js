@@ -1,0 +1,53 @@
+const consoleHeaderStyle = "padding: 5px; background-color: white; color: black; font-weight: bold;";
+console.log("%cArray creation", consoleHeaderStyle);
+const items = [2, "able", true];
+console.log(items);
+const numbers = [1, 2, 6, 3, 4, 7, 8, 10];
+console.log(numbers);
+console.log(items[1]);
+console.log(numbers.length);
+numbers.length = 3;
+console.log(numbers);
+numbers[numbers.length] = 10;
+console.log(numbers);
+
+console.log("%cBasic Array methods", consoleHeaderStyle);
+numbers.push(13);
+console.log(`after push ${numbers}`);
+numbers.pop();
+console.log(`after pop ${numbers}`);
+numbers.unshift(99);
+console.log(`after unshift ${numbers}`);
+numbers.shift();
+console.log(`after shift ${numbers}`);
+numbers.reverse();
+console.log(`after reverse ${numbers}`);
+console.log(numbers.includes(20));
+console.log(numbers.indexOf(10));
+console.log(numbers.indexOf(5));
+numbers.slice(1);                             // keeps array intact
+console.log(`array after slice ${numbers}`);
+numbers.splice(1, 1);          // modifies underlying array
+console.log(`array after splice ${numbers}`);
+console.log(numbers.splice(0, 1).reverse().toString().charAt(0));
+
+console.log("%cNesting, Concat & Spread operator", consoleHeaderStyle);
+const array1 = ["apple", "banana", "cherry", "date", "elderberry"];
+const array2 = ["falcon", "gazelle", "hawk", "iguana", "jaguar"];
+console.log(array1, array2);
+array1.push(array2);
+console.log(array1);
+console.log(array1[5][1]);
+array1.pop();
+console.log(array1.concat(array2));
+console.log(array1,array2);
+console.log([...array1,...array2]);
+const array3 = [1, 2, [1, 2], 3, [1, 2, [1, 2]]];
+console.log(array3.flat());
+console.log(array3.flat().flat());
+console.log(Array.isArray("word"));
+console.log(Array.from("12345"));
+const a = "a";
+const b = "b";
+const c = "c";
+console.log(Array.of(a, b, c));
