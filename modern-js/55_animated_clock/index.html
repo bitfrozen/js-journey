@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="src/script.ts" type="module"></script>
+  <title>Animated Clock</title>
+</head>
+<body>
+<div class="card">
+  <h3>Clock Style</h3>
+  <form>
+    <div class="form-input">
+      <label for="face-color">Face Color</label>
+      <input id="face-color" type="color" value="#f4f4f4"/>
+    </div>
+    <div class="form-input">
+      <label for="border-color">Border Color</label>
+      <input id="border-color" type="color" value="#800000"/>
+    </div>
+    <div class="form-input">
+      <label for="line-color">Number Lines Color</label>
+      <input id="line-color" type="color" value="#000000"/>
+    </div>
+    <div class="form-input">
+      <label for="large-hand-color">Large Hands Color</label>
+      <input id="large-hand-color" type="color" value="#800000"/>
+    </div>
+    <div class="form-input">
+      <label for="second-hand-color">second-hand Hand Color</label>
+      <input id="second-hand-color" type="color" value="#FF7F50"/>
+    </div>
+    <div class="form-input">
+      <button id="save-btn" type="submit">Save As Image</button>
+    </div>
+  </form>
+</div>
+<canvas height="500" id="canvas" width="500"></canvas>
+</body>
+</html>
