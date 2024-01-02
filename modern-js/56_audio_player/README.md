@@ -1,0 +1,1 @@
+Add your own music and image files into appropriate `images` and `music` folders and then update songs array at line 17
