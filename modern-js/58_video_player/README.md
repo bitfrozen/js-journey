@@ -1,0 +1,1 @@
+Add you own video file and poster file into `/media` folder and update code on line `index.html:21-22`.
